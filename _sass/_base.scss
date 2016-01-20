@@ -1,6 +1,6 @@
-@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon";
-@import "../bower_components/neat/app/assets/stylesheets/_neat";
-@import "_variables";
+@import "bourbon";
+@import "neat";
+@import "variables";
 
 body {
     color: $grey1;

@@ -17,4 +17,8 @@ markdown: redcarpet
 exclude:
     - "bower.json"
 sass:
+  load_paths:
+    - _sass
+    - bower_components/bourbon/app/assets/stylesheets/
+    - bower_components/neat/app/assets/stylesheets/
   compressed: true
