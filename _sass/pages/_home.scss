@@ -1,0 +1,95 @@
+@import "_variables";
+
+#intro {
+    > .container > section {
+        @include span-columns(4);
+
+        @include media($medium) {
+            @include span-columns(12);
+        }
+
+        > .box {
+            margin: 1em 1em 1em 1em;
+            padding: 3em 3em 3em 3em;
+            height: 22em;
+            border-radius: 6px;
+            border: 0.1em $grey3 solid;
+            text-align: center;
+
+            @include media($medium) {
+                height: 19em;
+            }
+
+            @include media($small) {
+                height: 20em;
+            }
+
+            > i {
+                width: 3em;
+                height: 3em;
+                font-size: 2em;
+                line-height: 3em;
+                border-radius: 100%;
+                color: $white;
+                background-color: $blue;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+#portfolio {
+    > .container {
+        :first-child {
+            @include media($medium) {
+                margin-bottom: 2em
+            }
+        }
+
+        > section {
+            @include span-columns(6);
+
+            @include media($medium) {
+                @include span-columns(12);
+            }
+
+            text-align: center;
+        }
+    }
+}
+
+#partners {
+    > .container > div {
+        @include media($default) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+
+        @include media($xlarge) {
+            @include span-columns(6);
+            @include omega(2n);
+        }
+
+        @include media($medium) {
+            @include span-columns(12);
+            @include omega(1n);
+        }
+
+        margin: 0 0 3em 0;
+
+        > a > img {
+            max-height: 8em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+#newPartner {
+    @include span-columns(12);
+    border: $grey3 solid 1px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 0;
+}

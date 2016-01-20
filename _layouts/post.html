@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!-- Content -->
+<section id="content">
+    <section>
+        <article>
+            <header>
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            </header>
+            <div class="container">
+                <div class="post">
+                    {{ content }}
+                </div>
+                <footer>
+                    {% if page.previous %}
+                    <a href="{{ page.previous.url }}">&larr; Billet précédent</a>
+                    {% endif %}
+                    {% if page.next and page.previous %}
+                    /
+                    {% endif %}
+                    {% if page.next %}
+                    <a href="{{ page.next.url }}">Billet suivant &rarr;</a>
+                    {% endif %}
+                </footer>
+            </div>
+        </article>
+    </section>
+</section>

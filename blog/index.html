@@ -1,0 +1,32 @@
+---
+layout: default
+title: blog
+---
+    <!-- Content -->
+    <section id="content">
+        {% for post in paginator.posts %}
+            <section class="{% cycle '', 'colored' %}">
+                <header class="major">
+                    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                </header>
+                <div class="container">
+                    <div class="post_excerpt">
+                        {{ post.excerpt }}
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="button">Lire la suite</a>
+                    </div>
+                    {% if forloop.index == forloop.length %}
+                    <!-- Pagination links -->
+                    <div id="paginator">
+                        {% if !paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-arrow-left"></i></a>
+                        {% endif %}
+                        <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+                        {% if !paginator.next_page %}
+                        <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-arrow-right"></i></a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+            </section>
+        {% endfor %}
+    </section>

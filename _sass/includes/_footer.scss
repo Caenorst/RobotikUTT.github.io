@@ -1,0 +1,27 @@
+@import "_variables";
+@import "_typography";
+
+body > footer {
+    margin: 0;
+    background-color: $grey4;
+    text-align: center;
+    padding: 0.8em 0 0.2em 0;
+    font-size: 1.5em;
+
+    > a {
+        > i {
+            display: inline-block;
+            margin: 0 0.25em 0 0.25em;
+        }
+
+        > span {
+            text-transform: uppercase;
+            font-weight: $bold-weight;
+        }
+    }
+}
+
+#GCIcon {
+    font-size: 0.75em;
+    font-weight: $bold-weight;
+}

@@ -1,0 +1,16 @@
+        <!-- Header -->
+        <header id="header">
+            <h1>
+                <a href="{{ site.baseurl }}/" id="siteTitle">Robotik</a>
+            </h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a class="page-link" href="{{ site.baseurl }}/blog">Blog</a></li>
+                    {% for page in site.pages %}
+                    {% if page.title and page.title != 'blog' %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header

@@ -1,0 +1,20 @@
+# Site settings
+title: Robotik
+email: robotik@utt.fr
+description:
+    Robotik website
+baseurl:
+url: http://robotik.utt.fr  # the base hostname & protocol for your site
+github_username:  RobotikUTT
+gems: [ jekyll-paginate ]
+paginate_path: /blog/page:num/
+paginate: 5
+sass:
+    sass_dir: _sass
+markdown: redcarpet
+
+# Build settings
+exclude:
+    - "bower.json"
+sass:
+  compressed: true

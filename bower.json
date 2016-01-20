@@ -1,0 +1,19 @@
+{
+  "name": "robotik",
+  "homepage": "https://github.com/CloudCannon/DopeTrope-Jekyll-Theme",
+  "authors": [
+    "Mousset Axel <pymzorr@gmail.com>"
+  ],
+  "description": "Static website and blog for the UTT robotics club",
+  "main": "index.html",
+  "keywords": [
+    "robotik",
+    "UTT",
+    "robotics",
+    "club"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}

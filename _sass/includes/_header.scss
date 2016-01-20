@@ -1,0 +1,57 @@
+@import "_typography";
+
+#header {
+    background-color: $white;
+    box-shadow: 0 0 0.1em 0 $grey3;
+    height: 3em;
+    line-height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+
+    > h1 {
+        font-size: 1.25em;
+        left: 1.25em;
+        margin: 0;
+        position: absolute;
+        text-decoration: none;
+
+        > a {
+            font-weight: $bold-weight;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: $grey1;
+            text-decoration: none;
+        }
+    }
+
+    > nav {
+        position: absolute;
+        height: inherit;
+        right: 1.25em;
+
+        > ul {
+            height: inherit;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                color: $grey1;
+                margin: 0 0 0 2em;
+                display: inline-block;
+
+                > a {
+                    display: block;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+#header + section {
+    margin: 3em 0 0 0;
+}

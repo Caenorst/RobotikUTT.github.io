@@ -1,0 +1,28 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/_neat";
+
+/*
+    Color scheme - Drunken parrot / Flat ui colors
+*/
+
+$white: #fff;
+$black : #364347; // The Black Flag
+$grey1: #5e696d; // Gunpowder
+$grey2: #93a4aa; // Pieces of Eight
+$grey3: #b2c6cd; // Custlass
+$grey4: #d6e1e5; // Coral
+$grey5: #e1eef3; // Costal surf
+$green: #3eb5ac; // Emerald cove
+$blue:  #2980b9; // Belize Hole
+
+
+/*
+    Media queries
+ */
+
+$xsmall: new-breakpoint(max-width 480px 12);
+$small: new-breakpoint(max-width 736px 12);
+$medium: new-breakpoint(max-width 980px 12);
+$large: new-breakpoint(max-width 1280px 12);
+$xlarge: new-breakpoint(max-width 1680px 12);
+$default: new-breakpoint(min-width 1681px 12);

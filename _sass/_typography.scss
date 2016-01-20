@@ -1,0 +1,20 @@
+@import "_variables";
+
+// Font weights
+$normal-weight: 300;
+$medium-weight: 400;
+$bold-weight: 500;
+
+// Base font
+$base-font-family: "Roboto", Helvetica, sans-serif;
+$base-line-height: 1.75em;
+$base-font-size-large: 14pt;
+$base-font-size-small: 12pt;
+$base-font-size-tiny: 11pt;
+
+// Code font
+$code-font-family: "Courier New", monospace;
+$code-font-size: 0.9em;
+
+// Icon font
+$icon-font: FontAwesome;
