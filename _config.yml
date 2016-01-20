@@ -9,16 +9,15 @@ github_username:  RobotikUTT
 gems: [ jekyll-paginate ]
 paginate_path: /blog/page:num/
 paginate: 5
-sass:
-    sass_dir: _sass
-markdown: redcarpet
 
 # Build settings
 exclude:
     - "bower.json"
+markdown: redcarpet
 sass:
-  load_paths:
-    - _sass
-    - bower_components/bourbon/app/assets/stylesheets/
-    - bower_components/neat/app/assets/stylesheets/
-  compressed: true
+    sass_dir: _sass
+    load_paths:
+        - _sass
+        - bower_components/bourbon/app/assets/stylesheets/
+        - bower_components/neat/app/assets/stylesheets/
+    compressed: true
