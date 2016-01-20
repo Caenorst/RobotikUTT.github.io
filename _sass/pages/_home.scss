@@ -1,5 +1,3 @@
-@import "variables";
-
 #intro {
     > .container > section {
         @include span-columns(4);
